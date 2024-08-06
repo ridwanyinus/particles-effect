@@ -1,10 +1,10 @@
 "use client";
 import { useEffect } from "react";
-import particlesJS from "@/components/particles";
+import particlesJS from "@/components/particles"; // Ensure the import path is correct
 
 const Page = () => {
   useEffect(() => {
-    
+    // Ensure particlesJS is defined before using it
     if (typeof particlesJS !== "undefined") {
       particlesJS("particles-js", {
         particles: {
@@ -77,7 +77,7 @@ const Page = () => {
     }
   }, []);
 
-  return <div id="particles-js"></div>;
+  return <div id="particles-js" style={{ width: "100%", height: "100vh" }}></div>;
 };
 
 export default Page;
