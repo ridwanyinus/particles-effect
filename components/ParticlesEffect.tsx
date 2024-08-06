@@ -1,7 +1,8 @@
 "use client";
 import { useEffect } from "react";
 import particlesJS from "@/components/particles"; // Ensure the import path is correct
-
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa6";
 const ParticlesEffect = () => {
   useEffect(() => {
     if (typeof particlesJS !== "undefined") {
